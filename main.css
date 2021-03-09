@@ -1,0 +1,166 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  /* per non far fare side scrolling ad alcuni modelli di cellulare  */
+}
+
+body {
+  background-color: #fbeeac;
+  color: #28527a;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+/* font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Roboto', sans-serif; */
+/* ---------navbar */
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  max-width: 20rem;
+  height: 100%;
+  border-right: solid #28527a 2px;
+  background-color: #f4d160;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar h1 {
+  padding: .75rem 0 .75rem 1rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar li {
+  padding: .3rem 0;
+  border-bottom: solid 1px #28527a;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+#navbar li:hover {
+  color: #fff;
+}
+
+/* -------main */
+main {
+  position: absolute;
+  margin-left: 21rem;
+  padding: 2rem;
+  margin-bottom: 110px;
+}
+
+div {
+  padding: 1rem;
+}
+
+main p {
+  padding: .5rem 0;
+}
+
+code {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.ex {
+  padding: 1.5rem 1rem;
+  max-width: 40rem;
+  display: block;
+  background-color: rgba(138, 196, 208, 0.7);
+  margin: 1rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h2 {
+  background-color: #f4d160;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  display: none;
+}
+
+span a {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: #28527a;
+}
+
+main li {
+  margin: auto auto auto 2rem;
+}
+
+@media only screen and (max-width: 850px) {
+  main {
+    position: relative;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  section {
+    margin-top: .5rem;
+  }
+
+  h2 {
+    padding: 1rem;
+  }
+
+  div {
+    padding: .5rem;
+  }
+
+  #navbar {
+    position: relative;
+    max-width: 100%;
+    z-index: 99999;
+    height: auto;
+
+    border-right: none;
+    margin-right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 0.5rem;
+  }
+
+  #navbar ul {
+    padding-left: 1.5rem;
+  }
+
+  #navbar li {
+    padding: 0.13rem 0;
+    border-bottom: none;
+
+  }
+
+  .ex {
+    width: auto;
+    padding: 1.5rem .5rem;
+    margin: 0;
+  }
+
+  span {
+    display: contents;
+  }
+}
